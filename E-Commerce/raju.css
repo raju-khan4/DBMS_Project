@@ -1,0 +1,233 @@
+.container{
+  margin-top:100px;
+}
+
+.orange-bg{
+  background-color:#fceae8;
+  border-radius:80px;
+}
+
+/* Carousel */
+
+.carousel-item{  
+  padding:20px 40px;
+}
+
+/* Carousel text center */
+
+.carousel-item .col-md-5{
+  text-align:center;
+}
+
+/* Price */
+
+.price{
+  color:red;
+  font-size:32px;     
+  font-weight:bold;
+  text-align:center;  
+  margin-top:10px;
+}
+
+/* Buy Now Button */
+
+.button-buy-now{
+  background-image: linear-gradient(to bottom, #000000, #333333);
+  color:white;
+  border-radius:8px;
+  padding:10px 20px;
+  border:none;
+  font-size:16px;
+  cursor:pointer;
+  display:block;
+  margin:20px auto;   /* button center */
+}
+
+.button-buy-now:hover{
+  background-image: linear-gradient(to bottom,#333333,#000000);
+}
+
+/* Categories */
+
+.cat1{
+  background-color:orange;
+}
+
+.cat2{
+  background-color:orchid;
+}
+
+.cat3{
+  background-color:skyblue;
+}
+
+.cat1,
+.cat2,
+.cat3{
+  padding:20px 40px;
+  border-radius:20px;
+}
+
+.categories h1{
+  color:white;
+}
+
+/* Card */
+
+.card{
+  border:none;
+  border-radius:10px;
+  box-shadow:5px 5px 10px lightgray;
+}
+
+.card-footer{
+  background-color:white;
+  border-top:none;
+}
+
+/* Subscribe */
+
+#subscribe{
+  height:300px;
+}
+
+#subscribe h6{
+  color:grey;
+}
+
+/* Footer */
+
+.last{
+  text-align:center;
+}
+
+/* Grid spacing */
+
+.col-md-3{
+  padding:10%;
+}
+
+.col-md-6{
+  padding:10%;
+  border-radius:40%;
+}
+
+.con{
+  margin:10%;
+  padding:10%;
+}
+.footer-custom {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-title {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.footer-subtitle {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #ffd700;
+  padding-left: 5px;
+}
+
+.footer-line {
+  background: rgba(255,255,255,0.3);
+}
+/* ================= LOGIN PAGE ================= */
+
+body{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* login container */
+
+.login-container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#1e3c72,#2a5298);
+}
+
+/* login card */
+
+.login-card{
+  background:white;
+  padding:50px;
+  width:420px;
+  border-radius:15px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.2);
+  text-align:center;
+}
+
+/* title */
+
+.login-card h2{
+  margin-bottom:25px;
+  font-size:28px;
+  color:#1e3c72;
+}
+
+/* input field */
+
+.login-card input{
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:16px;
+  transition:0.3s;
+}
+
+/* input focus effect */
+
+.login-card input:focus{
+  border-color:#1e3c72;
+  outline:none;
+  box-shadow:0 0 5px rgba(30,60,114,0.5);
+}
+
+/* login button */
+
+.login-card button{
+  width:100%;
+  padding:14px;
+  background:#1e3c72;
+  color:white;
+  border:none;
+  border-radius:8px;
+  font-size:17px;
+  cursor:pointer;
+  margin-top:10px;
+  transition:0.3s;
+}
+
+/* button hover */
+
+.login-card button:hover{
+  background:#2a5298;
+  transform:scale(1.03);
+}
+
+/* error message */
+
+.error-msg{
+  color:red;
+  font-size:14px;
+  margin-bottom:10px;
+}
