@@ -7,9 +7,9 @@ include "db.php";
 <html>
 
 <head>
-    <title>SADMAN E-COMMERCE</title>
-    <link rel="stylesheet" href="Sadman.css">
+    <title>OUR E-COMMERCE</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="raju.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@ include "db.php";
                         <li class="nav-item"><a class="nav-link" href="#mobile">Mobile</a></li>
                         <li class="nav-item"><a class="nav-link" href="#laptop">Laptop</a></li>
                         <li class="nav-item"><a class="nav-link" href="#cart">Cart</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/raju-khan4">Contact Us</a></li>
 
                         <?php if (isset($_SESSION['user_id'])) : ?>
                             <li class="nav-item">
@@ -102,9 +102,9 @@ include "db.php";
             </a>
         </div>
 
-        <h1 class="text-center mt-4">SADMAN E-COMMERCE</h1>
+        <h1 class="text-center mt-4">OUR E-COMMERCE</h1>
 
-        <!-- LAPTOP SECTION (ID: laptop যোগ করা হয়েছে) -->
+        
         <div class="container mt-4" id="laptop">
             <h3><strong>Laptop</strong></h3>
 
@@ -210,11 +210,11 @@ include "db.php";
     <script>
         function calculateTotal() {
             let grandTotal = 0;
-            // কার্ট টেবিলের ৪ নম্বর কলাম (Total Column) সিলেক্ট করা
+            
             let rows = document.querySelectorAll("#cartTable tbody tr");
             
             rows.forEach(row => {
-                let totalCell = row.cells[3]; // ৪ নম্বর কলাম (0-indexed 3)
+                let totalCell = row.cells[3]; 
                 if (totalCell) {
                     let amount = parseFloat(totalCell.innerText.replace('$', '')) || 0;
                     grandTotal += amount;
@@ -224,7 +224,7 @@ include "db.php";
             document.getElementById("totalBill").innerText = grandTotal;
         }
 
-        // পেজ লোড হলেই টোটাল বিল হিসেব করবে
+        
         window.onload = calculateTotal;
     </script>
 </body>
